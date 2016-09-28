@@ -1,0 +1,14 @@
+E:\School2015.2\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.csprojResolveAssemblyReference.cache
+E:\School2015.2\Prog\BoinDeck\BoinDeck\bin\Debug\BoinDeck.dll
+E:\School2015.2\Prog\BoinDeck\BoinDeck\bin\Debug\BoinDeck.pdb
+E:\School2015.2\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.dll
+E:\School2015.2\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.pdb
+E:\School2015.2\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeckNS.Properties.Resources.resources
+E:\School2015.2\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.csproj.GenerateResource.Cache
+F:\School2015.2\Prog\BoinDeck\BoinDeck\bin\Debug\BoinDeck.dll
+F:\School2015.2\Prog\BoinDeck\BoinDeck\bin\Debug\BoinDeck.pdb
+F:\School2015.2\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.csprojResolveAssemblyReference.cache
+F:\School2015.2\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeckNS.Properties.Resources.resources
+F:\School2015.2\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.csproj.GenerateResource.Cache
+F:\School2015.2\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.dll
+F:\School2015.2\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.pdb
