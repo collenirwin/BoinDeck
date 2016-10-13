@@ -1,4 +1,4 @@
-﻿using System.Drawing;
+using System.Drawing;
 
 namespace BoinDeckNS {
     public class BoinCard {
@@ -33,10 +33,10 @@ namespace BoinDeckNS {
 
         private void initProperties(int value, string suit) {
             this._value = value;
-            this._suit = suit;
+            this._suit  = suit;
 
             this._color = (_suit.ToLower() == "hearts" || _suit.ToLower() == "diamonds") ? "red" : "black";
-            this._isFaceCard = (value > 10) ? true : false;
+            this._isFaceCard = (value > 10);
 
             if (value == 1)
                 this._faceName = "Ace";
