@@ -12,3 +12,9 @@ F:\School2015.2\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeckNS.Properties.Resources
 F:\School2015.2\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.csproj.GenerateResource.Cache
 F:\School2015.2\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.dll
 F:\School2015.2\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.pdb
+E:\School2017.1\Prog\BoinDeck\BoinDeck\bin\Debug\BoinDeck.dll
+E:\School2017.1\Prog\BoinDeck\BoinDeck\bin\Debug\BoinDeck.pdb
+E:\School2017.1\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeckNS.Properties.Resources.resources
+E:\School2017.1\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.csproj.GenerateResource.Cache
+E:\School2017.1\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.dll
+E:\School2017.1\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.pdb

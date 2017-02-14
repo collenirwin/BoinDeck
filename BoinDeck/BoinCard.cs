@@ -5,13 +5,13 @@ namespace BoinDeckNS {
 
         #region Vars
 
-        private int _value;
-        private string _suit;
-        private string _color;
-        private bool _isFaceCard;
-        private string _faceName;
-        private string _fullName;
-        private Image _image;
+        public int value       { get; private set; }
+        public string suit     { get; private set; }
+        public string color    { get; private set; }
+        public string faceName { get; private set; }
+        public string fullName { get; private set; }
+        public bool isFaceCard { get; private set; }
+        public Image image     { get; private set; }
 
         #endregion
 
@@ -23,68 +23,44 @@ namespace BoinDeckNS {
 
         public BoinCard(int value, string suit, Image image) {
             initProperties(value, suit);
-            this._image = image;
+            this.image = image;
         }
 
         public BoinCard(int value, string suit, string imagePath) {
             initProperties(value, suit);
-            this._image = Image.FromFile("imagePath");
+            image = Image.FromFile("imagePath");
         }
 
         private void initProperties(int value, string suit) {
-            this._value = value;
-            this._suit  = suit;
+            this.value = value;
+            this.suit  = suit;
 
-            this._color = (_suit.ToLower() == "hearts" || _suit.ToLower() == "diamonds") ? "red" : "black";
-            this._isFaceCard = (value > 10);
+            string suitLower = suit.ToLower();
+            // if the suit is hearts or diamonds, the card color is red, otherwise it's black
+            color = (suitLower == "hearts" || suitLower == "diamonds") ? "red" : "black";
 
-            if (value == 1)
-                this._faceName = "Ace";
-            else if (value == 11)
-                this._faceName = "Jack";
-            else if (value == 12)
-                this._faceName = "Queen";
-            else if (value == 13)
-                this._faceName = "King";
-            else
-                this._faceName = value.ToString();
+            isFaceCard = value > 10;
 
-            this._fullName = _faceName + " of " + _suit;
+            if (value == 1) {
+                faceName = "Ace";
+
+            } else if (value == 11) {
+                faceName = "Jack";
+
+            } else if (value == 12) {
+                faceName = "Queen";
+
+            } else if (value == 13) {
+                faceName = "King";
+
+            } else {
+                faceName = value.ToString();
+            }
+
+            // ex: King of Clubs
+            fullName = faceName + " of " + suit;
         }
 
         #endregion
-
-        #region Getters
-
-        public int getValue() {
-            return this._value;
-        }
-
-        public string getSuit() {
-            return this._suit;
-        }
-
-        public string getColor() {
-            return this._color;
-        }
-
-        public bool isFaceCard() {
-            return this._isFaceCard;
-        }
-
-        public string getFaceName() {
-            return this._faceName;
-        }
-
-        public string getFullName() {
-            return this._fullName;
-        }
-
-        public Image getImage() {
-            return this._image;
-        }
-
-        #endregion
-
     }
 }
