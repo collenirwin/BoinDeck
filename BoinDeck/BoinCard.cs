@@ -1,6 +1,10 @@
 using System.Drawing;
 
 namespace BoinDeckNS {
+
+    /// <summary>
+    /// Represents a playing card, with a corresponding image
+    /// </summary>
     public class BoinCard {
 
         #region Vars
@@ -36,11 +40,21 @@ namespace BoinDeckNS {
             this.suit  = suit;
 
             string suitLower = suit.ToLower();
+<<<<<<< HEAD
+
             // if the suit is hearts or diamonds, the card color is red, otherwise it's black
             color = (suitLower == "hearts" || suitLower == "diamonds") ? "red" : "black";
 
             isFaceCard = value > 10;
 
+            // check for a special name (face card)
+=======
+            // if the suit is hearts or diamonds, the card color is red, otherwise it's black
+            color = (suitLower == "hearts" || suitLower == "diamonds") ? "red" : "black";
+
+            isFaceCard = value > 10;
+
+>>>>>>> origin/master
             if (value == 1) {
                 faceName = "Ace";
 

@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Drawing;
 
 namespace BoinDeckNS {
+
+    /// <summary>
+    /// Represents a deck of BoinCards, with methods for adding, dealing, and shuffling
+    /// </summary>
     public class BoinDeck {
 
         #region Vars
@@ -49,7 +53,15 @@ namespace BoinDeckNS {
             cards = new List<BoinCard>();
 
             if (numberOfDecks > 0) {
+<<<<<<< HEAD
+                addDecks(numberOfDecks);
+            }
+
+            if (shuffled) {
+                shuffle();
+=======
                 addDecks(numberOfDecks, shuffled);
+>>>>>>> origin/master
             }
         }
 
@@ -62,14 +74,31 @@ namespace BoinDeckNS {
         /// <summary>
         /// Shuffles the deck, arranging its cards in random order
         /// </summary>
+        /// <remarks>Not an in-place shuffle</remarks>
         public void shuffle() {
+<<<<<<< HEAD
+
+            // copy the deck into tmpDeck
+=======
+>>>>>>> origin/master
             List<BoinCard> tmpDeck = new List<BoinCard>(cards);
             cards.Clear();
 
             int total = tmpDeck.Count;
             for (int x = 0; x < total; x++) {
+<<<<<<< HEAD
+
+                // pick a random card from tmpDeck
+                int ranIndex = _ran.Next(tmpDeck.Count);
+
+                // add it into the main deck
+                cards.Add(tmpDeck[ranIndex]);
+
+                // remove it from tmpDeck
+=======
                 int ranIndex = _ran.Next(tmpDeck.Count);
                 cards.Add(tmpDeck[ranIndex]);
+>>>>>>> origin/master
                 tmpDeck.RemoveAt(ranIndex);
             }
 
@@ -87,6 +116,33 @@ namespace BoinDeckNS {
         /// <summary>
         /// Adds complete deck(s) of default BoinCards to the deck
         /// </summary>
+<<<<<<< HEAD
+        public void addDecks(int numberOfDecks) {
+
+            // foreach suit
+            for (int x = 0; x < _suits.Length; x++) {
+
+                // for each card in the suit
+                for (int y = 1; y < 14; y++) {
+
+                    // add that card to the deck
+                    cards.Add(
+                        new BoinCard(
+                            y, // value
+                            _suits[x], // suit
+
+                            // corresponding image from Resources
+                            (Image)Properties.Resources.ResourceManager.GetObject(
+                                "_" +
+                                y.ToString() + // Value
+                                "_of_" + 
+                                _suits[x].ToLower() // Suit
+                            )
+                        )
+                    );
+                }
+            }
+=======
         public void addDecks(int numberOfDecks, bool reshuffle = false) {
             for (int x = 0; x < _suits.Length; x++) {
                 for (int y = 1; y < 14; y++) {
@@ -103,22 +159,35 @@ namespace BoinDeckNS {
             if (reshuffle) {
                 shuffle();
             }
+>>>>>>> origin/master
         }
 
         /// <summary>
         /// Adds a BoinCard to the deck
         /// </summary>
+<<<<<<< HEAD
+        public void addCard(BoinCard card) {
+            cards.Add(card);
+=======
         public void addCard(BoinCard card, bool reshuffle = false) {
             cards.Add(card);
 
             if (reshuffle) {
                 shuffle();
             }
+>>>>>>> origin/master
         }
 
         /// <summary>
         /// Adds a random BoinCard to the deck
         /// </summary>
+<<<<<<< HEAD
+        public void addRandomCard() {
+            cards.Add(new BoinCard(
+                _ran.Next(1, 14), 
+                _suits[_ran.Next(4)]
+            ));
+=======
         public void addRandomCard(bool reshuffle = false) {
             cards.Add(new BoinCard(
                 _ran.Next(1, 14), 
@@ -128,28 +197,35 @@ namespace BoinDeckNS {
             if (reshuffle) {
                 shuffle();
             }
+>>>>>>> origin/master
         }
 
         /// <summary>
         /// Adds an array of BoinCards to the deck
         /// </summary>
-        public void addCards(BoinCard[] cards, bool reshuffle = false) {
+        public void addCards(BoinCard[] cards) {
             this.cards.AddRange(cards);
+<<<<<<< HEAD
+=======
 
             if (reshuffle) {
                 shuffle();
             }
+>>>>>>> origin/master
         }
 
         /// <summary>
         /// Adds a list of BoinCards to the deck
         /// </summary>
-        public void addCards(List<BoinCard> cards, bool reshuffle = false) {
+        public void addCards(List<BoinCard> cards) {
             this.cards.AddRange(cards);
+<<<<<<< HEAD
+=======
 
             if (reshuffle) {
                 shuffle();
             }
+>>>>>>> origin/master
         }
 
         #endregion

@@ -3,6 +3,10 @@ using System.Drawing;
 using System.Windows.Forms;
 
 namespace BoinDeckNS {
+
+    /// <summary>
+    /// Modified PictureBox that has fields for a BoinCard and a cardback image
+    /// </summary>
     [ToolboxItem(true)]
     public partial class BoinCardBox : PictureBox {
 
@@ -13,7 +17,7 @@ namespace BoinDeckNS {
 
         #endregion
 
-        #region Constructor
+        #region Constructor & Methods
 
         public BoinCardBox() {
             InitializeComponent();
@@ -28,6 +32,17 @@ namespace BoinDeckNS {
             SizeMode = PictureBoxSizeMode.Zoom;
         }
 
+<<<<<<< HEAD
+        public void showCard() {
+            Image = card.image;
+        }
+
+        public void showCardBack() {
+            Image = cardBack;
+        }
+
+=======
+>>>>>>> origin/master
         #endregion
     }
 }
