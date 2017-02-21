@@ -18,7 +18,4 @@ E:\School2017.1\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeckNS.Properties.Resources
 E:\School2017.1\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.csproj.GenerateResource.Cache
 E:\School2017.1\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.dll
 E:\School2017.1\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.pdb
-<<<<<<< HEAD
 E:\School2017.1\Prog\BoinDeck\BoinDeck\obj\Debug\BoinDeck.csprojResolveAssemblyReference.cache
-=======
->>>>>>> origin/master

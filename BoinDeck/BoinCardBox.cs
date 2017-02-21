@@ -32,7 +32,6 @@ namespace BoinDeckNS {
             SizeMode = PictureBoxSizeMode.Zoom;
         }
 
-<<<<<<< HEAD
         public void showCard() {
             Image = card.image;
         }
@@ -41,8 +40,6 @@ namespace BoinDeckNS {
             Image = cardBack;
         }
 
-=======
->>>>>>> origin/master
         #endregion
     }
 }
