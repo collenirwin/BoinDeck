@@ -32,7 +32,7 @@ namespace BoinDeckNS {
 
         public BoinCard(int value, string suit, string imagePath) {
             initProperties(value, suit);
-            image = Image.FromFile("imagePath");
+            image = Image.FromFile(imagePath);
         }
 
         private void initProperties(int value, string suit) {
